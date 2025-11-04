@@ -8,8 +8,8 @@
   <body>
     <h1>Steps to generating React elements using vanilla JavaScript</h1>
     <div>
-        <div>
-            <!-- use React & vanilla JavaScript to build a simple JavaScript application
+      <div>
+        <!-- use React & vanilla JavaScript to build a simple JavaScript application
 ▪ 1. Create an HTML document
 ▪ 2. Include “react” library and “react-dom” package into your HTML
 document
@@ -28,8 +28,21 @@ construct the element. Example: {style: {size:10px}}
 or {className: “firstPar”} or {Eventhandlers}, etc.
 o The “children” parameter: This represents any
 child/nested element we want to create -->
-        </div>
+      </div>
+      <div>
+        <!-- Why include the react-dom” package: We included this
+package in our HTML because "react-dom" has a
+method/function called “render()” that will stick/render the
+created React elements into the DOM to be displayed by the
+browser.
+Syntax: ReactDOM.render(element, containerElement)
+o The “element” parameter: The element that needs to
+be rendered in the DOM
+o The “containerElement” parameter: Where to
+render in the dom -->
+      </div>
     </div>
+    <div id="myDiv"></div>
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
