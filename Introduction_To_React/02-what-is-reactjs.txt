@@ -7,3 +7,25 @@ What is React.js?
     performance of applications and simplify the development of visual
     interfaces. React.js is used for handling the view layer of the full
     MVC stack for web and mobile apps.
+
+    
+Why is React called the view in the view layer of MVC?
+▪ MVC (Model-View-Controller) framework: MVC is an
+    architectural/design pattern in software design that separates an
+    application into three main logical components: Model, View, and
+    Controller. In its simplest form, it can be as simple as three folders,
+    each dedicated to store the Model, View, and Controller components
+    of an application in an organized manner.
+● Model component: This component stores all the data and
+    the logic of our website/app
+● View component: This component defines how the
+    website/app should display the data to the user. In short, this
+    component generates part of the website that the user views
+    or interacts with.
+● Controller component: This component, upon
+    mouse/keyboard inputs from the user, orders the Model to
+    update its data and then notifies the View component to
+    display the updated data. In short, this is a component that
+    serves in the middle between the Model and Controller
+    components by receiving and sending data from the View
+    component to the Model component and vice versa.
