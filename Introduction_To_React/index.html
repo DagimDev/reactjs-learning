@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steps to generating React elements using vanilla JavaScript</title>
+  </head>
+  <body>
+    <h1>Steps to generating React elements using vanilla JavaScript</h1>
+    <div>
+        <div>
+            <!-- use React & vanilla JavaScript to build a simple JavaScript application
+▪ 1. Create an HTML document
+▪ 2. Include “react” library and “react-dom” package into your HTML
+document
+● Note: Both React and ReactDOM are available over a CDN
+under the following link
+● https://reactjs.org/docs/cdn-links.html
+● Why include “react” library? We included this library
+because it has a method called “createElement()” that is
+needed to create elements. Syntax: createElement(type,
+{props}, children)
+o The “type” parameter: This represents the type of the
+HTML element. Example: <h1>, <p>, etc.
+o The “{props}” parameter: This represents a
+JavaScript object containing the properties required to
+construct the element. Example: {style: {size:10px}}
+or {className: “firstPar”} or {Eventhandlers}, etc.
+o The “children” parameter: This represents any
+child/nested element we want to create -->
+        </div>
+    </div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </body>
+</html>
