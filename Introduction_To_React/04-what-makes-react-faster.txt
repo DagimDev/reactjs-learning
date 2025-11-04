@@ -1,0 +1,46 @@
+What makes React faster?
+    What is ReactDOM (Virtual DOM)? What makes React efficient is
+    the fact that it uses the React Virtual DOM (ReactDOM) to handle
+    changes on DOM.
+Real DOM’s manipulation is slower for performance: DOM Document Object Model (DOM) is a
+    tree-like representation of your website that gets loaded into the
+    browser. DOM represents the web page (the document containing
+    HTML, CSS, JS) as an object model with properties and methods.
+    We use these properties/methods to select and change/manipulate the
+    elements on the document.
+Why real DOM manipulation is slow? Every time there is a
+    change in the document (change can be CSS whereby an
+    element’s background color changes to “yellow”), the
+    updated element and its children must be re-rendered. This is
+    a very resource-intensive process because the entire HTML
+    and CSS need to be recreated and re-rendered, again. It is
+    this re-rendering of the entire document object (even for a
+    slight change in the document) that makes real DOM’s
+    manipulation slow. React has a different way of handling
+    changes on DOM, and this is where Virtual DOM comes in
+    handy.
+        VDOM (ReactDOM): It is the virtual representation of the
+            real DOM. Every time there is a change in the DOM, it is the
+            virtual DOM that gets updated, not the real DOM. This
+            replica is just a JavaScript object that contains the necessary
+            description of what we want to be added on the DOM later.
+            
+How does React keep track of changes in DOM?
+● 1/ When new elements are added to/removed from the UI,
+    React starts by creating a replica of the Real DOM, the virtual
+    DOM. We said that the virtual DOM is represented as a tree,
+    and each element is a node on this tree. If the state of any of
+    these elements changes, a new virtual DOM tree is created.
+    Note: React always keeps the previous version of the virtual
+    DOM before change.
+● 2/ Then the current virtual DOM is compared/diffed to the
+    previous virtual DOM compares. Diffing: Comparing the
+    difference between a previous version of the virtual DOM
+    with the current version of the virtual DOM. Note: React uses
+    an efficient diff algorithm to compare the versions of the
+    virtual DOM.
+● 3/ Then the virtual DOM identifies the difference between the 2 virtual DOM versions.
+● 4/ Once it identifies the difference, the virtual DOM
+    calculates the best possible method to make these changes to
+    the real DOM. It then goes back to the real DOM and only
+    updates the part that is changed.
