@@ -18,3 +18,18 @@
     import React, however, you will need to import React if, in
     your component, you use Hooks and other exports that React
     provides
+
+The "react-dom" package: The "react-dom" is a package provided
+    by the “react” library and is responsible to render UI in the browser.
+    "react-dom" provides DOM specific methods that can be used at the
+    top level of a web app to enable an efficient way of accessing and
+    modifying the DOM. Note: Most components do not need to use the
+    "react-dom" package. "react-dom" provides an API containing the
+    various methods like render(), findDOMNode(), and
+    unmountComponentAtNode(). The most important of all the
+    ReactDOM’s methods is the render() method.
+        ● render() method from "react-dom" package: This
+        function/method is used to render a single React Component
+        or several Components wrapped together in a Component or a
+        div element. render() function is the point of entry where the
+        tree of React elements is created and updated.
