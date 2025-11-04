@@ -1,0 +1,20 @@
+. How does ReactJS work?
+    The “react" library and the “react-dom” package: There are two
+    main React libraries we use to build the UI components of a web
+    application:
+▪ The “react” library: React is a JavaScript library that lets you
+    develop a top user interface/UI for both web and mobile
+    applications. It also manages/tracks changes
+● Why import React from the “react” library? We import
+    React because the JSX code we write in our React component
+    must be converted into vanilla JavaScript. Even if it is Babel
+    that does the conversion of your JSX into vanilla JavaScript,
+    Babel needs to use the createElement method available under
+    the React (React.createElement method).
+● No need to import React from “react” for simple
+    components: React has introduced a new JSX transform with
+    the release of React 17, which automatically transforms JSX
+    without using React.createElement. This allows us to not
+    import React, however, you will need to import React if, in
+    your component, you use Hooks and other exports that React
+    provides
