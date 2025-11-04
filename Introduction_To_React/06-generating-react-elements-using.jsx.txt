@@ -1,0 +1,15 @@
+Generating React elements using JSX: As we have seen above, we
+    can create React elements using plain JavaScript. We can also create
+    React elements using React (JSX).
+▪ Why JSX preferred to create React elements?
+    ● Creating React elements using vanilla JavaScript takes time.
+    ● Creating React elements using vanilla JavaScript will not
+        allow us to use the benefit of React’s virtual DOM. This
+        means that every time there is a change to the DOM elements,
+        the entire DOM object needs to re-render, which slows down
+        the performance of our website. Therefore, using the React
+        library and JSX to create React elements provide us a way to
+        manage changes in the DOM without the need to re-render
+        the entire DOM as the React library has its own efficient
+        mechanism of handling it.
+    ● JSX also allows React to show more useful error and warningmessages.
