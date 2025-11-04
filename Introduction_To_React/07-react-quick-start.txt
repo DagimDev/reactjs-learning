@@ -1,0 +1,41 @@
+Getting started with React development: installing React,
+configuring npm, using create-react-app
+● Install Node.js: By this time, we can safely assume that you all have
+    Node installed on your computer. Therefore, no need to download and
+    install Node on your computer again. By now, we also know that
+    “NPM” comes with Node
+▪ Why Node: When we created React elements using vanilla
+    JavaScript, we ran our code on the browser. However, when we
+    create React elements using the React library, we will not use HTML
+    code, but JSX to write our HTML. Browsers cannot run our JSX,
+    therefore, we will use Node as a runtime environment to run our JSX code
+● Using "create-react-app": "create-react-app" is a tool (built by
+    developers at Facebook) that gives you a massive head start when
+    building React apps. It saves you from time-consuming setup and
+    configuration. You simply run one command, and Create React App sets
+    up the tools you need to start your React project. If not for this tool, you
+    would need to install and set up Babel, Webpack, and other modules just
+    to get started
+    ● Create a React app: The first thing you need to do every time you
+    create a React project is to create a react app to help you set up the
+    initial structure of your project.
+    ▪ Syntax to create a React project: npx create-react-app
+    nameOfProject
+    ▪ Running this command will create a project folder with
+    create-react-app, install the latest versions of React and React-DOM
+    libraries, install the latest version of react-scripts, install all the
+    dependencies (libraries/packages that your React app will depend on
+    to properly function), and create files that will help you track these
+    dependencies
+▪ Syntax to create an app: npx create-react-app yourProjectName
+● Example: npx create-react-app myfirstreactapp
+● Change your directory to go to the React app you just created: cd myfirstreactapp
+● Run/ start your React app by typing the following command: npm start
+▪ A new browser window will open with your newly created React
+    App. If not, open your browser and type localhost:3000 in the
+    address bar.
+▪ Note: When running “npm start”, if at any time you get a message
+    stating “... Something is already running on port 3000. Would you
+    like to run the app on another port instead? › (Y/n)…”, please just
+    type “y” without the quotations to basically say “yes” and allow your
+    React App to listen to another port.
