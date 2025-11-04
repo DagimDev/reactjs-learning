@@ -1,0 +1,28 @@
+Generating React elements using vanilla JavaScript vs generating React elements using React(JSX)
+Vanilla/plain JavaScript: It is simply JavaScript written without
+libraries like React or jQuery.
+● React element(s): React element is the smallest entity in react. React
+    element is an object representation of a DOM element in memory. It’s
+    important to note that a React element isn’t actually the thing you’ll see
+    on your screen. Instead, it’s just an object representation of what you see
+    on your screen. React elements can be created using vanilla JavaScript
+    or React (JSX).
+● Generating traditional DOM vs generating React DOM:
+▪ Traditional DOM is generated from HTML code: Traditionally,
+    the DOM is generated from an HTML code that is passed to the
+    browser directly.
+▪ React DOM is generated from JSX: To improve the efficiency of
+    recreating DOM, React decided to generate the HTML using
+    JavaScript (JSX) and manage it as JavaScript object instead. In other
+    words, when you build your application using React, you create your
+    HTML using JSX, a markup that allows us to write HTML in
+    JavaScript by converting HTML tags into React elements. JSX is not
+    a requirement for using React.
+▪ JSX is not a requirement for using React: Each JSX element is
+    just syntactic sugar for calling React.createElement(component,
+    props, ...children). So, anything you can do with JSX can also be
+    done with just plain JavaScript. Note: Using React without JSX is
+    especially convenient when you do not want to set up compilation in
+    your build environment. To help us understand this concept, let us
+    start by building a simple page where we create the HTML using
+    palin JavaScript.
