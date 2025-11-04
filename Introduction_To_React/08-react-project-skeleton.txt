@@ -1,0 +1,37 @@
+Getting started with React Development: understanding the file
+structure of a React app
+● Your project folder and project folder name: Your project name is
+    created when you run “npx create-react-app my-first-react-project” in
+    your terminal. Note: Your project name has to always be in lowercase.
+● The node_modules folder: This folder contains folders of all the
+    required dependencies & packages needed to build your React app
+▪ Dependencies: External/third-party code/software that your project
+    depends on. Example: You will see a folder for Bootstrap in your
+    node_modules folder if your React project implements Bootstrap
+● The public folder: It contains static files such as index. html,
+    JavaScript library files, images, and other assets
+▪ Index.html: index.html file in the public folder is the root file that
+    displays when we run “npm start” and when the React app opens in
+    the web browser. You must not delete this file.
+▪ This will be the only html file in the entire react application since
+    React is generally written using JSX. Also, this file has a line of
+    code <div id=”root”></div>. This line is very significant since all
+    the application components are loaded into this div.
+● The src folder: It is your working folder where you put all the
+    JavaScript files/components, CSS files, images, and other assets for
+    your project.
+● App.js: This is the file for App.js component. App.js component is the
+    main component in React, which acts as a container for all other
+    components.
+● Index.js: This is a JavaScript file corresponding to our index.html. It is
+    an entry point of react app. This means all your components are
+    imported to this file and rendered through this file to the index.html.
+▪ All of our modules are rendered here by reactDOM’s render method
+    that takes 2 arguments, our components (contained under app.js) and
+    the place where those components are going to be rendered at, the
+    root html.
+▪ ReactDOM’s render method in index.js takes our components and
+    inserts them to the root index.html file.
+● App.css: This is a CSS file used to provide styling for our App.js component
+● Package.json and package-lock.json files: These files are created by
+    npm to manage the installed dependencies you use for your React app.
