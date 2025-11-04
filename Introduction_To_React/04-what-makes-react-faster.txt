@@ -24,7 +24,7 @@ Why real DOM manipulation is slow? Every time there is a
             virtual DOM that gets updated, not the real DOM. This
             replica is just a JavaScript object that contains the necessary
             description of what we want to be added on the DOM later.
-            
+
 How does React keep track of changes in DOM?
 ● 1/ When new elements are added to/removed from the UI,
     React starts by creating a replica of the Real DOM, the virtual
@@ -44,3 +44,20 @@ How does React keep track of changes in DOM?
     calculates the best possible method to make these changes to
     the real DOM. It then goes back to the real DOM and only
     updates the part that is changed.
+
+Why DOM manipulation fast in Virtual DOM?
+● Only the object that changed will be updated in the real
+    DOM: When there is a change between the previous version
+    of the virtual DOM and the current Version of the virtual
+    DOM, React first updates the current virtual DOM. It then
+    goes to the real DOM and updates ONLY the specific object
+    that has changed. In short, there will be no re-rendering of the
+    ENTIRE document when there is a change in the DOM,
+    rather, only the change (which is the difference between the 2
+    versions of the VDOM) will be inserted into the real DOM.
+● React follows batch updates to update the real DOM: In
+    React, updates to the real DOM are sent in batches instead of
+    sending updates for every single change in state. Re-rendering
+    the entire DOM object is the most expensive part, and React
+    efficiently ensures that the real DOM receives only batched
+    updates to re-render the UI.
