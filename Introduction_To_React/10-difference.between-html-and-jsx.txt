@@ -1,0 +1,34 @@
+Difference between HTML and JSX: Even though JSX is very similar
+to HTML, notice these differences.
+▪ JavaScript's reserved keywords cannot be used in JSX: For
+    instance, class property in HTML cannot be used in JSX and is thus
+    replaced by “className” in JSX. Similarly, the “for” attribute in
+    HTML is “HTMLFor” in JSX, since "for" is one of the most
+    common JavaScript reserved keywords.
+▪ In JSX, you must return a single parent element, or it won't
+    compile: Nested JSX must return one element, which we’ll call a
+    parent element that wraps all other levels of nested elements.
+    However, in HTML, multiple elements can be returned.
+▪ In JSX, it is possible to write JavaScript directly: The minute you
+    wrap your code in curly braces {} in JSX, React will understand it to
+    be JavaScript code. Whereas in HTML, you need a script tag or an
+    external JavaScript file to implement JavaScript.
+▪ All HTML attributes and event references in JSX must be in
+    camelCase: In HTML, you do not have to use camelCase for
+    attributes, IDs, and event references. In JSX, HTML attributes and
+    event references must be in camel case, and that is why the “onclick”
+    event becomes “onClick” in JSX.
+▪ All Tags Self-close in JSX: In HTML almost all tags have an
+    opening and a closing tag. In JSX, however, any element can be
+    written as a self-closing tag, for example, <div/>, but it is not
+    advised to do so. Your React app will not compile if you have a <br>
+    because there's no forward slash before the right-angle bracket of the
+    line break tag
+● Expression/code inside curly braces { } in JSX: When you wrap an
+    expression/code inside curly braces in JSX, you are saying that the
+    expression is a JavaScript variable, or property, or any other valid
+    JavaScript code. In short, we use curly braces in JSX to embed a
+    JavaScript expression
+▪ In React, curly braces are a special syntax to let the JSX
+    parser/interpreter know that it needs to interpret the contents in
+    between the braces as JavaScript instead of a string
