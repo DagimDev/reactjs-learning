@@ -18,3 +18,6 @@ Component name must start in uppercase: The name of a component should
 
 Keep one component in one file: There is a convention to keep only one
     component in one JavaScript file
+
+Keep the file and component/function name the same: Another convention is
+    to make the function name and JavaScript file names the same
