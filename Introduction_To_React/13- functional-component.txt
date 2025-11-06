@@ -1,0 +1,14 @@
+What is a functional Component? The simplest way to define a component is to write a
+    JavaScript function. A functional component is simply a JavaScript function may or may
+    not take a data as a parameter but returns a React element (JSX)
+▪ React element: a React element is an object that virtually describes the DOM Nodes that a component
+    represents
+▪ Example of a functional component
+
+     function JustPractice() {
+         return <div> JustPractice </div>;
+     }
+▪ Example of a functional component (using arrow function)
+     const JustPractice = () => {
+        return <div>JustPractice</div>;
+     };
