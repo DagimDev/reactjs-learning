@@ -3,3 +3,7 @@ React components (functional components)
 Component: A React component is one of the major building blocks of React. Every
     application you will develop in React will be made up of independent and reusable pieces
     code, called components
+
+Difference between a component and a plain JavaScript file: A component
+    has the same purpose as a JavaScript function has, except that a component
+    returns a React element via a render function
