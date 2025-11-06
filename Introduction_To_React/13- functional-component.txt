@@ -12,3 +12,42 @@ What is a functional Component? The simplest way to define a component is to wri
      const JustPractice = () => {
         return <div>JustPractice</div>;
      };
+
+Function based components: steps to create functional components
+    ● Steps to create a functional component:
+        o 1. We have seen in our last class how to create a React app using "create-react-app".
+            Make sure to create a React app first
+        o 2. Go to the “src” folder and create a new JavaScript file for your component
+        o 3. Import all the necessary files/components and libraries (such as “react” library
+            from “react”) to the component
+            ● To work with jsx in JavaScript file we will have to import the React library.
+                Syntax: import React from 'react';
+            ● If we want to use a component our newly created component, we will import
+                that component. Syntax: import Footer from "./Footer";
+            ● Note: No need to mention the “.js” file extension when importing
+                your Footer.js component because build workflow automatically
+                considers the import as a “.js” or “.jsx” file type by default. If file is
+                of different type, example a “.css” file, then we will need to mention
+                the extension of the file importing it
+        o 3. Create a functional component by simply creating a JavaScript function
+            ● Type the “rfce” abbreviation/snippet without the quotation marks. This is
+                basically a shortcut to create a functional component structure/boilerplate.
+                The “rfce” shortcut will import the React library, create your functional
+                component and export your component for other components to use it. Note:
+                Make sure you have the “ES7+ React/Redux/React-Native snippets”
+                extension installed on your VSC to access the above shortcut from your
+                component
+        o 4. Export the component: To be able to use a component later, we need to first export
+            it so we can import it and use it somewhere else
+            ● Syntax to export: export default NameOfComponent
+            o 5. Render your component in your App.js
+            ● Syntax: < NameOfComponent />
+    
+    ● Sample functional component using the above steps:
+        // JustPractice.js
+        import React from 'react'
+            function JustPractice() {
+                return <div>JustPractice</div>;
+            }
+
+        export default JustPractice;
