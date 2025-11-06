@@ -1,0 +1,5 @@
+React components (functional components)
+
+Component: A React component is one of the major building blocks of React. Every
+    application you will develop in React will be made up of independent and reusable pieces
+    code, called components
