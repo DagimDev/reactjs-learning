@@ -7,3 +7,11 @@ Component: A React component is one of the major building blocks of React. Every
 Difference between a component and a plain JavaScript file: A component
     has the same purpose as a JavaScript function has, except that a component
     returns a React element via a render function
+
+Component name must start in uppercase: The name of a component should
+    always start with a capital letter. This is done to differentiate a component tag
+    from HTML tags in our JSX. For instance, if you name your component as
+    “button” and render this component as <button/> in your App.js, instead of
+    rendering your <button /> component, React ignores it and renders a vanilla
+    <button> element instead. This is because the button component is not
+    capitalized when referenced in ReactDOM.render() method
