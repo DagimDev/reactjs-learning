@@ -15,3 +15,6 @@ Component name must start in uppercase: The name of a component should
     rendering your <button /> component, React ignores it and renders a vanilla
     <button> element instead. This is because the button component is not
     capitalized when referenced in ReactDOM.render() method
+
+Keep one component in one file: There is a convention to keep only one
+    component in one JavaScript file
