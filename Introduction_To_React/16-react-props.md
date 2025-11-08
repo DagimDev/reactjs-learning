@@ -114,3 +114,21 @@ Gender="male" />;
 }
 }
 export default FufiParent; 
+
+
+(spread attributes): Using spread attributes to make passing
+props easier. For this example, use the above child component.
+// Parent component
+import React, { Component } from "react";
+import FufiChild from "./FufiChild";
+class FufiParent extends Component {
+render() {
+let allProps = {
+Name: "Abebe",
+Age: "he is 44",
+Gender: "male",
+};
+return <FufiChild {...allProps} />;
+}
+}
+export default FufiParent;
