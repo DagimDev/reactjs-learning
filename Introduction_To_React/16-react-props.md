@@ -88,3 +88,29 @@ Using props in function components:
         );
      }
      export default FufiChild;
+
+
+Multiple props: You can use as many props as you like. Let us see how you can
+use multiple props in 2 examples below
+▪ Example 1:
+//Child component
+import React from "react";
+function FufiChild(props) {
+return (
+<h1>
+This is {props.Name}: {props.Age} and
+{props.Gender}
+</h1>
+);
+}
+export default FufiChild;
+// Parent component
+import React, { Component } from "react";
+import FufiChild from "./FufiChild";
+class FufiParent extends Component {
+render() {
+return <FufiChild Name="Abebe" Age="he is 55"
+Gender="male" />;
+}
+}
+export default FufiParent; 
