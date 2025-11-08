@@ -173,3 +173,43 @@ return (
 );
 }
 export default ChildDestructuringProps;
+
+Destructuring props in class components: When we access the props using the
+“this” keyword, we have to use this/ this.props throughout the program, but by the
+use of destructuring, we can discard this/ this.props by assigning them in new
+variables. This is very difficult to monitor props in complex applications.
+▪ So, how do we destructure props in class components? We destructure
+props in the render() function under the child component by assigning all
+of our props on a new variable. Please note that unlike functional
+components, in class components we do not acheive destructuring when
+the props are passed in in the function’s argument. We achieve the
+destructuring of props in class components wherever the variables are
+called.
+▪ Notice below that destructuring our props gives us access to both the
+“Name” and the “Age” properties, which we need for different children
+components.
+▪ Example:
+ //Parent component
+import React, { Component } from "react";
+import ChildDestructuringProps from "./ChildDestructuringProps";
+class ParentDestructuringProps extends Component {
+render() {
+return (
+<div >
+<ChildDestructuringProps Name="Abebe" Age="is 55" />
+</div>
+);
+}
+}
+export default ParentDestructuringProps;
+// Child component
+import React, { Component } from "react";
+class ChildDestructuringProps extends Component {
+render() {
+const { Name, Age } = this.props;
+return (
+<h1>{Name} {Age}</h1>
+);
+}
+}
+export default ChildDestructuringProps
