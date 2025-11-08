@@ -57,3 +57,24 @@ Why use {} in JSX: Curly braces { } is special syntax in JSX. It
     process the expression inside the braces as JavaScript during
     compilation. That JavaScript expression can be a variable,
     function, an object, or any code.
+
+
+Using props in class components:
+// Child component here
+import { Component } from "react";
+        class FufiChild extends Component {
+            render() {
+                return <h1>Hello {this.props.Name}</h1>;
+            }
+        }
+export default FufiChild;
+
+// Parent component here
+    import React, { Component } from "react";
+    import FufiChild from "./FufiChild";
+        class FufiParent extends Component {
+            render() {
+                return <FufiChild Name="My name is Sen" />;
+            }
+        }
+export default FufiParent;
