@@ -141,3 +141,35 @@ o Destructuring (revision): In our previous discussion about destructuring we sa
     variables. Destructuring, does not change the array or the object, it makes a copy
     of the desired object or array element by assigning them in its own new variables
     so that we can use this new variable anytime.
+
+
+Destructuring props in functional components: We achieve destructuring of
+our props in functional components as we pass in the props argument in the
+function.
+▪ Notice below that destructuring our props gives us access to both the
+“Name” and the “Age” properties, which we need for different children
+components.
+//Parent component
+import React, { Component } from "react";
+import ChildDestructuringProps from
+"./ChildDestructuringProps";
+class ParentDestructuringProps extends Component {
+render() {
+return (
+<div >
+<ChildDestructuringProps Name="Abebe" Age="is 55" />
+</div>
+);
+}
+}
+//Child component
+import React from "react";
+function ChildDestructuringProps(props) {
+const { Name, Age } = props;
+return (
+<div>
+{Name} {Age}
+</div>
+);
+}
+export default ChildDestructuringProps;
