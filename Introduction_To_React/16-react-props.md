@@ -132,3 +132,12 @@ return <FufiChild {...allProps} />;
 }
 }
 export default FufiParent;
+
+
+Destructuring props
+o Destructuring (revision): In our previous discussion about destructuring we said
+    that the destructuring concept was introduced in ES6 to allow us to extract
+    multiple pieces of data from an array or object and assign them to their own
+    variables. Destructuring, does not change the array or the object, it makes a copy
+    of the desired object or array element by assigning them in its own new variables
+    so that we can use this new variable anytime.
