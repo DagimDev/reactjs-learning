@@ -78,3 +78,13 @@ export default FufiChild;
             }
         }
 export default FufiParent;
+
+Using props in function components:
+     import React from "react";
+
+     function FufiChild(props) {
+        return (
+            <h1>Hello {props.Name}</h1>
+        );
+     }
+     export default FufiChild;
