@@ -51,3 +51,9 @@ or
 ▪ let urlName= { theURL: "/Mac" };
 ▪ return <ChildNavigation LinkURL={urlName.
 theURL} />;
+
+Why use {} in JSX: Curly braces { } is special syntax in JSX. It
+    is used in JSX (which is basically HTML) to instruct React to
+    process the expression inside the braces as JavaScript during
+    compilation. That JavaScript expression can be a variable,
+    function, an object, or any code.
