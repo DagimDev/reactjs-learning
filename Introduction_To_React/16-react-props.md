@@ -27,3 +27,27 @@ React props
 ▪ Note: You can use props in both functional and class components. You can even
     use functional component for your parent component and use a class component
     for your child component while using props.
+
+Why use props:
+▪ We use props in React to pass data from one/ parent component to a child
+▪ Props allow us reuse components dynamically. It is just like creating a function
+    that takes an argument. Different components will have their own specific
+    properties. Meaning the data will not be static as the component’s data can be
+    modified to fit what we want.
+● Steps to use props: 
+    ▪ Step 1: Create two components; a parent and a child component
+    ▪ Step 2: Import the child component in the parent component and return it.
+    ▪ Step 3: Import and return the parent component in your app.js
+    ▪ Step 4: Initiate/declare the props in your parent component
+    ▪ Step 5: Send props into a parent component,
+● By returning your props as HTML attributes:
+o Example:
+▪ return <ChildNavigation LinkURL="/Mac" />; or
+• By returning your props as string:
+▪ let urlName = "/Mac ";
+▪ return <ChildNavigation LinkURL ={urlName} />;
+or
+• By returning your props as objects:
+▪ let urlName= { theURL: "/Mac" };
+▪ return <ChildNavigation LinkURL={urlName.
+theURL} />;
