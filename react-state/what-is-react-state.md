@@ -31,3 +31,6 @@ Why we need states: State comes in handy when you want to update and
         ▪ Note: A component itself can create, update and use state
         ▪ Note: Just like any variable, a component's state can change over time. When the
             state object changes, the component re-renders.
+● Similarity between props and state: Both are in object format in React containing
+    key-value pairs that we use to render the value of the objects. Both hold information
+    about a component
