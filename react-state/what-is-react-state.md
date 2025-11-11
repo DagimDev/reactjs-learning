@@ -34,3 +34,33 @@ Why we need states: State comes in handy when you want to update and
 ● Similarity between props and state: Both are in object format in React containing
     key-value pairs that we use to render the value of the objects. Both hold information
     about a component
+
+
+Difference between props and States:
+▪ Props are variables that get passed to the component from parent component (like
+    a parameter is passed to a function). State on the other hand is still variable, but
+    directly initialized and managed within the component.
+▪ Props are objects of React with immutable properties, meaning, we cannot
+    change their value throughout the component. Because props contain information
+    set by the parent component, that information should not be changed. This is
+    because changing value of props will not make sense, it will be like changing the
+    parameter of an adder function to fixed parameter. States are also objects of
+    React, however, states can be changed by the component they are initialized in,
+    just like we can change value of a variable
+        ● Why are props called pure? Because props are passed in another
+        component and they cannot change, any component that uses props only
+        (no state) is pure, meaning, it will render the same output as long as we
+        provide the same input
+▪ State is created in the component itself (every component has a built-in state),
+    however, props are passed from a parent component to a child
+▪ Props are available in both classes based and function-based components without
+    any issue. However, state used only available in class-based functions because it
+    has constructor function where states can be initiated. States became available in
+    functional component only after 2019 when Hooks were created.
+▪ Props come in handy when you want to show some static information inside of a
+    component, meaning, information that won’t need to be updated in the
+    component. However, we use state when we want to update and re-render a
+    component based on something a user has done. A good example is when we
+    have form (input or checkbox) and a user updates the form with information, we
+    will use state to store the user’s updated value and to manage the updated
+    information
