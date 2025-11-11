@@ -56,10 +56,79 @@ class Example extends Component {
 
 export default Example;
 
-
 // Render(): We are already familiar with the render method in React, each class
 // component needs to contain a render method, and it is simple to understand. React
 // renders HTML to the web page by using a function called render(). The purpose of the
 // function is to display the specified HTML code inside the specified HTML element. In
 // the render() method, we can read props and state and return our JSX code to the root
 // component of our app.
+
+// ComponentDidUpdate(): This method is not called for the initial render, but it is every
+//     time the state of the component changes/gets updated. Note: componentDidMount will
+//     execute only after our index.html is rendered/generated on browser. Meaning, if we have
+//     componentDidMount() {alert(“hi”)}, the “hi” will display only after index.html is
+//     generated and shown on browser. Note: Another thing to note here is that, if we have
+//     componentDidUpdate() method called to update an initial state (assume a button is
+//     clicked and a state value has changed to “hi”), even if the component renders, the “hi”
+//     will not run every time we use componentDidUpdate().
+// ▪ Parameters of componentDidUpdate(): The method takes previous props,
+// previous state and snapshot as its three parameters. Because you have previous
+// state and props values, it allows you to compare the current value with the
+// previous. Inside the method we can check if a condition is met and perform an
+// action based on it.
+// ▪ Avoid setState() componentDidUpdate(): Never use setState() inside
+// componentDidUpdate() because it would lead to infinite loop and cause extra
+// re-renderong that is not visible to the user. However, if you want to call setState()
+// in componentDidMount(), you must wrap it in a condition to avoid an infinite
+// loop. To avoid an infinite loop, all the network requests are needed to be inside a
+// conditional statement like below:
+ componentDidUpdate(prevProps, prevState) {
+ if (prevState.data !== this.state.data) {
+ // Now fetch the new data here.
+ }
+ }
+// ▪ Look at the counter example we did in class to explain how to use
+// componentDidUpdate(). In the below example, we have tow states, the “count”
+// and the “age” states. We have two buttons for each and when a count button is
+// clicked, we want the count state value to increase by 1 and when the age button is
+// clicked, we want the initial age state to increase by 10. Whenever value of the
+// count state is changed, we also want the title of the browser document to change
+// to that same value. Note that, we do not want the title of the document to change
+// when age state is changed. We said we call componentDidUpdate() only after
+// there is a change in state of a component. Here too, we will use
+// componentDidUpdate() to change the document title only after we make sure the
+// count state has changed. Please notice how a conditional statement is used under
+// the componentDidUpdate() method to execute the document title update only if
+// the count value changes (to avoid title update when age updates only)
+class UsingClassLifeCycleComponent extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      count: 0,
+      age: 5,
+    };
+  }
+  updateAge = () => {
+    this.setState(() => {
+      return { age: this.state.age + 10 };
+    });
+  };
+  updateCount = () => {
+    this.setState(() => {
+      return { count: this.state.count + 1 };
+    });
+  };
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.count !== this.state.count) {
+      document.title = `Count: ( ${this.state.count} )`;
+    }
+  }
+  render() {
+    return (
+      <div>
+        <button onClick={this.updateCount}>COUNT:{this.state.count}</button>
+        <button OnClick={this.updateAge}>AGE: {this.state.age}</button>
+      </div>
+    );
+  }
+}
