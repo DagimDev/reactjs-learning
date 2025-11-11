@@ -14,3 +14,20 @@ React States
     functions which return JSX. You can understand states as local variables of a function
     which can only be accessed and changed within component. A state in React Component
     is its own local state; it cannot be accessed and modified outside the component.
+
+Why we need states: State comes in handy when you want to update and
+    re-render your component based on something the user has done. Good example
+    is when we have form (input) and when the user updates the form with her new
+    information, we will use state to store the user’s updated value to manage the
+    updated information. In short, state is used to keep track of information between
+    multiple renderings of a component. Example: Tracking information about the
+    component before and after clicking a button
+▪ Why not just use variables than states in React: Though using state may seem
+    similar to class variable, the major difference between using class variables and
+    state is updating data. When you use states, you do not have to manually
+    reassigning the variable, you just use the this.setState() method to change value
+    of states.
+
+        ▪ Note: A component itself can create, update and use state
+        ▪ Note: Just like any variable, a component's state can change over time. When the
+            state object changes, the component re-renders.
