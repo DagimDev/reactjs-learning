@@ -132,3 +132,51 @@ class UsingClassLifeCycleComponent extends Component {
     );
   }
 }
+
+
+
+// ComponentWillUnmount(): This is the last lifecycle method, which will be called when
+// the component is about to be removed from the DOM tree and destroyed. When a
+// component is removed from DOM, componentWillUnmout() will be executed before it is
+// unmounted. Note: We cannot call setState() during this lifecycle method because the
+// component is destroyed and cannot be re-rendered. Once a component instance is
+// unmounted, it will never be mounted again. A few examples are, when you get alert on
+// your browser saying, “are you sure you want to leave this page”, they are telling you that
+// the component you are on is about to be destroyed, unsubscribing from a website and
+// other cleanup routines. Example for ComponentWillUnmount(): Assume you have a
+// parent component called ExampleComp.js. In your parent component, let us say you want
+// to show a header component, a child component, called “MyHeader.js”. You decided to
+// show the MyHeader component in your parent component when the component is
+// mounted originally. However, there is a delete button that you created to delete the
+// MyHeader component from the parent component when the button is clicked.
+// Parent component (ExampleComp.js)
+constructor() {
+super();
+this.state = {
+show: true,
+};
+}
+deleteHeader = () => {
+this.setState({ show: false });
+};
+render() {
+let myHeader;
+if (this.state.show) {
+myHeader = <FufiChild />;
+}
+return (
+<div>
+{myHeader}
+<button onClick={this.deleteHeader}>
+DeleteHeader </button>
+</div>
+);
+}
+// Child component (MyHeader.js)
+class MyHeader extends Component {
+componentWillUnmount() {
+alert("The FufiChild component is about to be unmounted.");
+}
+render() {
+return <h1>HelloReact!</h1>;
+} };
