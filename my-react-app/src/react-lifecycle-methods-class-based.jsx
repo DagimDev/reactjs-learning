@@ -15,3 +15,11 @@
 // ▪ Unmounting: As the name suggests unmounting is the final step of the
     // component lifecycle where the component is removed from the page. This is
     // basically the death of a component.
+
+//     What are the React Life Cycle Methods? These are React’s predefined functions
+            // (methods) that are invoked/invoked in different stages/ lifecycles of the component’s
+            // existence. Note: One important thing to notice is that lifecycle methods can only be used
+            // in class components. In functional components we have other options (Hooks). But more
+            // on that in the next class. Below let us discuss the most common lifecycle methods we
+            // can use the different stages of a React component; ComponentDidMount(), Render(),
+            // ComponentDidUpdate() and ComponentWillUnmount()
