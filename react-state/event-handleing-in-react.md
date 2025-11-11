@@ -68,3 +68,20 @@ Hello <button>
 ● Note: Make sure you are not calling the event handler
     function (make sure to call the function without
     brackets) when you pass it to the component
+
+
+                        Steps to take when handling events in React
+        ▪ Step 1: Create a component
+        ▪ Step 2: Define a JavaScript function inside your class as a method.
+        ● Binding required for class components: In class
+            components, if you want your function to access pass
+            props or state from your component, you need to bind
+            the function to your component. In JavaScript, class
+            methods (functions in a class) are not bound to class
+            instances by default. Therefore, you need to use the
+            "this" key word to bind the function to the class instance
+            (your component in your case). There are different ways
+            of binding a class method to your class component
+        ▪ Step 3: Return an HTML element in your component and
+            execute your event handler function when an event happens on
+            the HTML element
