@@ -87,3 +87,37 @@ Using states in class components by initialization states without constructor:
         }
  }
  export default ExampleComp;
+
+Passing state to external components as props: We can also pass state values to child
+    components as props. Below, the ExampleComp component is state and renders the
+    OtherExample component as a child. Let us pass the “state1” property found in its state
+    down to this child component then show the value of “state1” in OtherExample
+    component’s render method. The value “0” will be displayed in your browser/localhost
+// ExampleComp.js (parent component)
+        import OtherExample from "./OtherExample";
+            class ExampleComp extends Component {
+                constructor() {
+                        super();
+                        this.state = {
+                            state1: 0,
+                            state2: "Test",
+                        };
+                    }
+                render() {
+                    return (
+                        <div>
+                            <OtherExample myData={this.state.state2} />
+                        </div>
+                    );
+                }
+            }
+        export default ExampleComp;
+
+// OtherExample.js (child component)
+    import React, { Component } from "react";
+        class OtherExample extends Component {
+            render() {
+            return <div>{this.props. myData}</div>;
+        }
+        }
+    export default OtherExample;
