@@ -55,3 +55,11 @@ class Example extends Component {
 }
 
 export default Example;
+
+
+// Render(): We are already familiar with the render method in React, each class
+// component needs to contain a render method, and it is simple to understand. React
+// renders HTML to the web page by using a function called render(). The purpose of the
+// function is to display the specified HTML code inside the specified HTML element. In
+// the render() method, we can read props and state and return our JSX code to the root
+// component of our app.
