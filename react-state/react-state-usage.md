@@ -61,3 +61,29 @@ import React, { Component } from "react";
         }
     }
  export default ExampleComp;
+
+Using states in class components by initialization states without constructor:
+    Initialization without constructor is not widely adopted yet. This is because class property
+    declarations are new features in JavaScript. But once they will be supported by all
+    browsers, they may be used more widely in React to create initial state in a class
+    component. Note: If you do not use a constructor, you can use the state object directly,
+    without the “this.state”. You will need to use the “this.state” if you use a constructor
+    because state is an object that belongs to the “ExampleComp” class which has a method
+    called constructor and you are trying to access the state from inside of this constructor
+    method. You can remove the constructor function altogether and initialize states as
+    follows:
+
+ class ExampleComp extends Component {
+    state = {
+        bussinessName: "Dagi's Tech",
+        businessState: "Robe",
+    };
+        render() {
+            return (
+                <div>
+                    <h1>{this.state.bussinessName}</h1>
+                </div>
+            );
+        }
+ }
+ export default ExampleComp;
