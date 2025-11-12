@@ -15,3 +15,12 @@ React Hooks were introduced in React 16.8 to solve problems in class components,
     Code duplication across components
     Confusing this keyword handling
     Hooks made React simpler, more functional, and easier to test.
+
+React hooks vs React classes
+| Aspect           | React Hooks              | React Classes                                   |
+| ---------------- | ------------------------ | ----------------------------------------------- |
+| Syntax           | Functional components    | Class components                                |
+| State Management | `useState`, `useReducer` | `this.state`, `setState()`                      |
+| Lifecycle        | `useEffect`              | `componentDidMount`, `componentDidUpdate`, etc. |
+| Code Reuse       | Custom Hooks             | Higher-Order Components, Render Props           |
+| Learning Curve   | Easier                   | Harder (needs `this` binding)                   |
