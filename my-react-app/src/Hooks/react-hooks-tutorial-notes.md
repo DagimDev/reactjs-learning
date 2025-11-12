@@ -8,3 +8,10 @@ We use Hooks inside functional components when we need to:
     Perform side effects like fetching data or updating the DOM (useEffect)
     Reuse logic across components (useCustomHook)
     Hooks make components cleaner and more modular.
+
+Why use Hooks (the origin of React hooks)
+React Hooks were introduced in React 16.8 to solve problems in class components, such as:
+    Complex and hard-to-maintain state logic
+    Code duplication across components
+    Confusing this keyword handling
+    Hooks made React simpler, more functional, and easier to test.
