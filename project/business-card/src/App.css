@@ -14,3 +14,9 @@ h1 {
   color: white;
   text-decoration: underline;
 }
+
+
+.score{
+  padding: 12px;
+  width: auto;
+}
