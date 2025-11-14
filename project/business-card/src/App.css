@@ -29,3 +29,8 @@ h1 {
 .algo{
   display: inline;
 }
+
+.wrap{
+  offset-distance: inherit;
+  padding: auto;
+}
