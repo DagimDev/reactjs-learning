@@ -43,3 +43,7 @@ h1 {
   padding-block: inherit;
   clear: both;
 }
+
+.grape{
+  columns: #000;
+}
