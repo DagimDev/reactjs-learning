@@ -44,6 +44,7 @@ could do that in a paragraph tag like below:
 
 Using states in class components by initializing states in the constructor
 
+```jsx
 import React, { Component } from "react";
     class ExampleComp extends Component {
     constructor() {
@@ -61,7 +62,7 @@ import React, { Component } from "react";
         }
     }
  export default ExampleComp;
-
+```
 Using states in class components by initialization states without constructor:
     Initialization without constructor is not widely adopted yet. This is because class property
     declarations are new features in JavaScript. But once they will be supported by all
@@ -72,7 +73,7 @@ Using states in class components by initialization states without constructor:
     called constructor and you are trying to access the state from inside of this constructor
     method. You can remove the constructor function altogether and initialize states as
     follows:
-
+```jsx
  class ExampleComp extends Component {
     state = {
         bussinessName: "Dagi's Tech",
@@ -87,13 +88,14 @@ Using states in class components by initialization states without constructor:
         }
  }
  export default ExampleComp;
-
+```
 Passing state to external components as props: We can also pass state values to child
     components as props. Below, the ExampleComp component is state and renders the
     OtherExample component as a child. Let us pass the “state1” property found in its state
     down to this child component then show the value of “state1” in OtherExample
     component’s render method. The value “0” will be displayed in your browser/localhost
 // ExampleComp.js (parent component)
+```jsx
         import OtherExample from "./OtherExample";
             class ExampleComp extends Component {
                 constructor() {
@@ -121,3 +123,5 @@ Passing state to external components as props: We can also pass state values to 
         }
         }
     export default OtherExample;
+
+```
