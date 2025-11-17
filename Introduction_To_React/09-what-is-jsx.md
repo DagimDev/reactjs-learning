@@ -23,6 +23,7 @@ What is JSX (JavaScript XML)?
     contain letters, digits, hyphens, underscores, and periods.
 ● Compare a JSX code and an XML code:
 ▪ Example of JSX Code:
+```jsx
 <div>
     <div className="abebe">
         <ul>
@@ -37,3 +38,4 @@ What is JSX (JavaScript XML)?
         <SEX>M</SEX>
         <age>31</age></student>
     </class-room>
+```
