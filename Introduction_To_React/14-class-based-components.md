@@ -1,4 +1,4 @@
-Class based components
+s
     React class component before and after ES6: When React was initially released in
     2013 and until ES6 was released in 2015. JavaScript did not have classes. Because
     JavaScript didn't have a built-in class system then, React developers used React’s
@@ -7,19 +7,20 @@ Class based components
     both ways can create a component class. But the syntax is different.
 
 ▪ Syntax of React before ES6: We do not need to use this syntax now
+```jsx
      let createReactClass = require('create-react-class');
         let Greeting = createReactClass({
         render: function() {
         return <h1>Hello</h1>;
      }
      });
-    
+```  
 Syntax of React after ES6: Creating a class component is pretty simple if you follow the following steps:
     ● Import the React and Component from React
     ● Define a class that extends Component and has a render function.
     ● Export your component to make it available for other compoents
     ● This is the syntax we now use to create class components.
-
+```jsx
         import React, { Component } from 'react';
 
             class YourComponent extends Component {
@@ -29,7 +30,7 @@ Syntax of React after ES6: Creating a class component is pretty simple if you fo
             }
 
         export default YourComponent;
-
+```
 ● Note: The above syntax is the one that we will use to create class components
 
 Explaining each term/keyword in class component
