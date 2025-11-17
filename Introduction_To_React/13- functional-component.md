@@ -4,7 +4,7 @@ What is a functional Component? The simplest way to define a component is to wri
 ▪ React element: a React element is an object that virtually describes the DOM Nodes that a component
     represents
 ▪ Example of a functional component
-
+```jsx
      function JustPractice() {
          return <div> JustPractice </div>;
      }
@@ -12,7 +12,7 @@ What is a functional Component? The simplest way to define a component is to wri
      const JustPractice = () => {
         return <div>JustPractice</div>;
      };
-
+```
 Function based components: steps to create functional components
     ● Steps to create a functional component:
         o 1. We have seen in our last class how to create a React app using "create-react-app".
@@ -45,9 +45,11 @@ Function based components: steps to create functional components
     
     ● Sample functional component using the above steps:
         // JustPractice.js
+```jsx
         import React from 'react'
             function JustPractice() {
                 return <div>JustPractice</div>;
             }
 
         export default JustPractice;
+```
