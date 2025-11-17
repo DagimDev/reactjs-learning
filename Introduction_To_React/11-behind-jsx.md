@@ -17,18 +17,19 @@ Browser doesn’t understand JSX. What happens behind the scenes
 ▪ Our functional React component is written in JSX: Below, we
     have our HTML written in JavaScript or simply in JSX. See below
     how JSX is allowing us to write the paragraph tag <p> in JavaScript.
+```jsx
             function Person( ) {
                 return (
                     <p>Hello React!</p>
                 );
             }
-▪ Babel transforms our code, which is written with JSX elements,
-    into React.createElement calls: Our JSX code will be transformed
-    into the following vanilla JS code.
+// ▪ Babel transforms our code, which is written with JSX elements,
+//     into React.createElement calls: Our JSX code will be transformed
+//     into the following vanilla JS code.
             function Person() {
                 return React.createElement(
-                    “p”,
+                    "p",
                     null,
-                    “Hello React”
+                    "Hello React"
                 );
             }
