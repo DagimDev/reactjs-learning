@@ -36,3 +36,45 @@ How does Context API work? The Context API basically lets you broadcast your dat
 to multiple components by wrapping them with a context provider. It then passes this data
 to the context provider using its value attribute. Then child components can tap into this
 provider using a context consumer or the useContext() Hook when needed.
+
+Steps to use context API:
+▪ Step 1: create a context using the createContext() method from React and save it
+on a variable. Make sure to export the context you created because in most cases
+your component will be in another file. Example:
+```jsx
+const MyContext = React.createContext()
+```
+▪ Step 2: Take your created context and wrap the context provider around the child
+components you want to pass down data to. Note: The context you created above,
+the "MyContext" , is an object that has two properties, namely Provider and
+Consumer. Both Provider and Consumer are components. So, go ahead and wrap
+your Provider component around your child component.
+▪ Example:
+```jsx
+ <MyContext.Provider>
+    <ChildComponent/>
+ </MyContext.Provider>
+```
+▪ Step 3: Put the value you want to pass to any child components on your context
+provider using the value prop.
+▪ Example:
+
+```jsx
+ <MyContext.Provider value={{ user: "Alem" }}>
+    <ChildOne />
+ </MyContext.Provider>
+```
+▪ Step 3: Use the Consumer component to use/consume/read the value of the
+context (which you created above) in any child component. Note: To consume
+the passed down value, we use a technique called “render props”. Render props is
+a technique for sharing data/code between React components using a prop whose
+value is a JavaScript function. So, use the Consumer component to wrap this
+function and make this function to return the value of your context.
+▪ Example:
+```jsx
+ MyContext.Consumer>
+    {function (value) {
+        return <div>{value}</div>;
+      }
+    }
+```
