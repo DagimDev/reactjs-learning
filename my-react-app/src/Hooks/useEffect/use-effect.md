@@ -44,3 +44,15 @@ The second argument is an optional array of dependencies/state variables:
 The dependencies argument of useEffect() lets you control when the side-effect
 runs. Meaning, if we use this argument, the logic in your callback (first
 argument) executes only if the dependencies have changed between renderings.
+
+
+Note: If you do not provide the dependency argument, then, the side
+effect runs after every rendering.
+```jsx
+    function UsingUseEffect() {
+        const [count, setCount] = useState(0);
+        useEffect(function(){
+            alert ("hi")
+        })
+    }
+```
