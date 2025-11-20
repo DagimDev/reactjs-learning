@@ -78,3 +78,14 @@ function and make this function to return the value of your context.
       }
     }
 ```
+
+Examples on how to use Context API: Before looking at an example on how to avoid
+prop drilling using the context API, it is better to see an example on how to pass data to
+child components using prop drilling. For both examples below, assume that we are
+building an app that welcomes a user by first name when the user logs in. Assume that we
+have the root/parent component, called Parent.js where the user’s name object (props) is
+available in. However, the component that renders the welcome message with the user’s
+name is nested deep within our child component called, ChildThree.js. The user’s name
+object will need to be passed down to ChildThree.js component through two other child
+components called, ChildOne.js and ChildTwo.js. Now, let us see how we can pass the
+user’s name data from Parent.js to ChildThree.js using prop drilling and context API.
