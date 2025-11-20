@@ -9,3 +9,16 @@ Understanding useEffect(): We now know that components are used primarily to
     However, there are times when a component makes computations that do not target the
     change in state/prop value. These calculations are called side-effects. It is the useEffect()
     method that we use if we want to calculate side-effects independent from renderings.
+
+Explaining what useEffect() does in English: Assume we have a component that has a
+    count state with 5 as initial value and that the state value increases by 1 whenever a
+    button is clicked. Assume you want your component to render the updated value upon
+    every click. The primary job of your component is to calculate the state change and
+    display the updated state in the browser. However, let us assume you want to run a side
+    effect (changing the title of your document) independent of what your component
+    renders. This is when you use useEffect(). Your rendering logic will render your updated
+    count state and your logic inside useEffect() method will change the title of your
+    document after the component has rendered.
+        ▪ So, what does useEffect do in short? It allows us to tell our component to
+            execute some side-effect logic after rendering the component.
+        ▪ Some examples of side effects: Fetching data, updating the DOM, and timers.
