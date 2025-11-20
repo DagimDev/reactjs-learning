@@ -120,3 +120,12 @@ context provider. As you would expect, this is not very performant when many
 components depend on this Context Provider, as they will re-render whenever
 there is an update to the state regardless of whether the change concerns or
 affects them or not.
+
+
+Why do we then need the useContext() hook?
+To make data consuming easy, React 16.8 introduced the useContext() hook. When we use
+the useContext() hook, we do not need the render props technique (we used under
+Context API). Rather, we can pass the entire context object (which we created in the
+parent component) into our React.useContext() hook on top of our consuming child
+component. In short, the useContext() hook was introduced to simplify the consuming
+part of context API.
