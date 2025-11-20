@@ -39,3 +39,8 @@ Example:
             })
          }
 ```
+
+The second argument is an optional array of dependencies/state variables:
+The dependencies argument of useEffect() lets you control when the side-effect
+runs. Meaning, if we use this argument, the logic in your callback (first
+argument) executes only if the dependencies have changed between renderings.
