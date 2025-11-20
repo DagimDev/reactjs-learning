@@ -39,16 +39,16 @@ provider using a context consumer or the useContext() Hook when needed.
 
 Steps to use context API:
 ▪ Step 1: create a context using the createContext() method from React and save it
-on a variable. Make sure to export the context you created because in most cases
-your component will be in another file. Example:
+    on a variable. Make sure to export the context you created because in most cases
+    your component will be in another file. Example:
 ```jsx
 const MyContext = React.createContext()
 ```
 ▪ Step 2: Take your created context and wrap the context provider around the child
-components you want to pass down data to. Note: The context you created above,
-the "MyContext" , is an object that has two properties, namely Provider and
-Consumer. Both Provider and Consumer are components. So, go ahead and wrap
-your Provider component around your child component.
+    components you want to pass down data to. Note: The context you created above,
+    the "MyContext" , is an object that has two properties, namely Provider and
+    Consumer. Both Provider and Consumer are components. So, go ahead and wrap
+    your Provider component around your child component.
 ▪ Example:
 ```jsx
  <MyContext.Provider>
@@ -56,7 +56,7 @@ your Provider component around your child component.
  </MyContext.Provider>
 ```
 ▪ Step 3: Put the value you want to pass to any child components on your context
-provider using the value prop.
+    provider using the value prop.
 ▪ Example:
 
 ```jsx
@@ -65,11 +65,11 @@ provider using the value prop.
  </MyContext.Provider>
 ```
 ▪ Step 3: Use the Consumer component to use/consume/read the value of the
-context (which you created above) in any child component. Note: To consume
-the passed down value, we use a technique called “render props”. Render props is
-a technique for sharing data/code between React components using a prop whose
-value is a JavaScript function. So, use the Consumer component to wrap this
-function and make this function to return the value of your context.
+    context (which you created above) in any child component. Note: To consume
+    the passed down value, we use a technique called “render props”. Render props is
+    a technique for sharing data/code between React components using a prop whose
+    value is a JavaScript function. So, use the Consumer component to wrap this
+    function and make this function to return the value of your context.
 ▪ Example:
 ```jsx
  MyContext.Consumer>
@@ -80,12 +80,12 @@ function and make this function to return the value of your context.
 ```
 
 Examples on how to use Context API: Before looking at an example on how to avoid
-prop drilling using the context API, it is better to see an example on how to pass data to
-child components using prop drilling. For both examples below, assume that we are
-building an app that welcomes a user by first name when the user logs in. Assume that we
-have the root/parent component, called Parent.js where the user’s name object (props) is
-available in. However, the component that renders the welcome message with the user’s
-name is nested deep within our child component called, ChildThree.js. The user’s name
-object will need to be passed down to ChildThree.js component through two other child
-components called, ChildOne.js and ChildTwo.js. Now, let us see how we can pass the
-user’s name data from Parent.js to ChildThree.js using prop drilling and context API.
+    prop drilling using the context API, it is better to see an example on how to pass data to
+    child components using prop drilling. For both examples below, assume that we are
+    building an app that welcomes a user by first name when the user logs in. Assume that we
+    have the root/parent component, called Parent.js where the user’s name object (props) is
+    available in. However, the component that renders the welcome message with the user’s
+    name is nested deep within our child component called, ChildThree.js. The user’s name
+    object will need to be passed down to ChildThree.js component through two other child
+    components called, ChildOne.js and ChildTwo.js. Now, let us see how we can pass the
+    user’s name data from Parent.js to ChildThree.js using prop drilling and context API.
