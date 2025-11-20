@@ -3,7 +3,9 @@
 // import ExComp from "./react-events/ExComp";
 // import ExampleComp from "./react_state/ExampleComp";
 
-import Parent from "./Hooks/useContext/Parent";
+import MyParent from "./Hooks/useContext/UseContextEdom/MyParent";
+
+// import Parent from "./Hooks/useContext/Parent";
 
 function App() {
   return (
@@ -11,11 +13,16 @@ function App() {
       {/* UseEffect Count */}
       {/* <Count /> */}
 
-      <h3>
+      {/* <h3>
         Example of passing data from parent to a child in a deeply nested
         component (prop drilling):
+      </h3> */}
+      <h3>
+        2. Example of passing data from parent to child in a deeply nested-
+        component (context API):
       </h3>
-      <Parent />
+        <MyParent />
+      {/* <Parent /> */}
     </div>
   );
 }
