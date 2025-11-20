@@ -69,3 +69,17 @@ of the effect does not depend on any state change.
             }, [ ])
          }
 ```
+
+Note: If you provide state or props value as the value of dependency
+argument, the side-effect logic runs only when the value of these
+specified state/props changes and the component renders. Below, the
+alert message will show every time there is a click that changes in the
+count state value
+```jsx
+        function UsingUseEffect() {
+            const [count, setCount] = useState(0);
+            useEffect(function(){
+                alert ("hi")
+            }, [count ])
+        }
+```
