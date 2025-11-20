@@ -89,3 +89,34 @@ Examples on how to use Context API: Before looking at an example on how to avoid
     object will need to be passed down to ChildThree.js component through two other child
     components called, ChildOne.js and ChildTwo.js. Now, let us see how we can pass the
     user’s name data from Parent.js to ChildThree.js using prop drilling and context API.
+
+Major drawbacks of depending on the Context API:
+▪ Problems with component reusability: When a context provider is wrapped
+over multiple child components, we are implicitly passing whatever state/data
+that is stored in that provider to all child components it wraps. Please note that
+the data/state is not literally passed the child components until we initiate an
+actual context consumer (or useContext() hook). However, by providing a
+context, we are implicitly making these child components dependent on the state
+provided by this context provider. We will encounter a problem when we try to
+reuse any of these components outside the context provider. For instance, if we
+do not want to wrap a child component in the Context Provider and reuse it for
+some other purpose, the component first tries to confirm whether that implicit
+state provided by the context provider still exists before rendering. When it does
+not find this state, it throws a render error. Remember our previous example and
+say in our MyParent component, oour ChildOne component was placed outside
+our context provider and you wanted to reuse the ChildOne component to display
+a different message based on a different condition. In this case, ChildThree, the
+component that will use the state from parent component, will confirm if the state
+(provided by the context provider) still exists before it renders. It will not find the
+state as ChildOne component is placed outside the context provider. Therefore, it
+throws a render error.
+▪ Problems with performance: The Context API uses a comparison algorithm
+that compares the value of its current state to any update it receives, and
+whenever a change occurs, the Context API broadcasts this change to every
+component consuming its provider, which in turn results in a re-render of these
+components. This would seem trivial at first glance, but when we rely heavily on
+Context for basic state management, we needlessly push all of our states into a
+context provider. As you would expect, this is not very performant when many
+components depend on this Context Provider, as they will re-render whenever
+there is an update to the state regardless of whether the change concerns or
+affects them or not.
