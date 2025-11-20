@@ -56,3 +56,16 @@ effect runs after every rendering.
         })
     }
 ```
+
+Note: If you provide an empty array ([ ]) as a dependency argument, the
+side-effect runs only one time after the initial rendering similar to
+componentDidMount() lifecycle method. This is because the execution
+of the effect does not depend on any state change.
+```jsx
+         function UsingUseEffect() {
+            const [count, setCount] = useState(0);
+            useEffect(function(){
+                alert ("hi")
+            }, [ ])
+         }
+```
