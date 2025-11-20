@@ -24,3 +24,10 @@ is laborious and time-consuming. React Context was introduced to allows us to
 pass data through our component trees, giving our components the ability to
 communicate and share data at different levels. So, React context was created to
 fix these issues.
+
+React Context API: Context is a way to share global data (like props, state or variables)
+between deeply nested components more easily without the need to manually pass props
+down to each nested component. Note: Each component in Context is context-aware,
+therefore, instead of passing props down through every single component on the tree, the
+components in need of a prop can simply ask for it, without needing intermediary helper
+components that only help relay the prop.
