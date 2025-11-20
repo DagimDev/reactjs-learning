@@ -31,3 +31,8 @@ down to each nested component. Note: Each component in Context is context-aware,
 therefore, instead of passing props down through every single component on the tree, the
 components in need of a prop can simply ask for it, without needing intermediary helper
 components that only help relay the prop.
+
+How does Context API work? The Context API basically lets you broadcast your data
+to multiple components by wrapping them with a context provider. It then passes this data
+to the context provider using its value attribute. Then child components can tap into this
+provider using a context consumer or the useContext() Hook when needed.
