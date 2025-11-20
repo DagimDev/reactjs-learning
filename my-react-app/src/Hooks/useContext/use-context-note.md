@@ -129,3 +129,52 @@ Context API). Rather, we can pass the entire context object (which we created in
 parent component) into our React.useContext() hook on top of our consuming child
 component. In short, the useContext() hook was introduced to simplify the consuming
 part of context API.
+
+Steps to use useContext(): Step 1, Step 2 and Step 3 we used for Context APU above
+remain the same when using the useContext() hook. However, the consuming step is
+differnent here.
+▪ Step 1: create a context using the createContext() method from React and save it
+on a variable. Make sure to export the context you created because in most cases
+your component will be in another file. Example:
+const MyContext = React.createContext()
+▪ Step 2: Take your created context and wrap the context provider around the child
+components you want to pass down data to. Note: The context you created above,
+the “MyContext” , is an object that has two properties, namely Provider and
+Consumer. Both Provider and Consumer are components. So, go ahead and wrap
+your Provider component around your child component like below.
+▪ Example:
+```jsx
+ <MyContext.Provider>
+    <ChildComponent/>
+ </MyContext.Provider>
+```
+▪ Step 3: Put the value you want to pass to any child components on your context
+provider using the value prop.
+▪ Example:
+```jsx
+ <MyContext.Provider value={{ user: "Alem" }}>
+    <ChildOne />
+ </MyContext.Provider>
+```
+▪ Step 4: Go to the child component you finally want to consume your data/value.
+Import the useContext() hook from React. Also, import the context your created
+in your parent component.
+▪ Example:
+```jsx
+ import React, { useContext } from "react";
+ import { MyContext } from "./MyParent";
+```
+▪ Step 5: In the above child component, on top of the component, call the
+useContext () hook and pass the entire context object as its argument and put this
+value on a variable.
+▪ Example:
+```jsx 
+    const myValue = useContext(MyContext);
+```
+▪ Step 6: In the above child component, consume/read the value of the context in
+your child component. To do this, make your component return the above (
+“myValue” ).
+▪ Example:
+``` jsx 
+return <div>Welcome : {myValue}</div>;
+```
