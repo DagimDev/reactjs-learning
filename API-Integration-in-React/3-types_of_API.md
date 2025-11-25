@@ -24,3 +24,7 @@ definitions and protocols used to integrate data from one application into anoth
             huge problem to overcome.
         o For instance, if your business uses/integrates Google's open
         weather API for your business’ website.
+    
+REST/RESTful API vs Web API vs SOAP API: APIs are tools we use to transfer data
+    from one app to another and this transfer requires clear protocols and architectures. API
+    protocols/architectures are the rules that govern an API's operation.
