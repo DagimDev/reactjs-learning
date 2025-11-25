@@ -76,3 +76,19 @@ Introduction to API: what do we mean by API?
                 private and checks if the data sent between two applications is encrypted). In
                 short, with a little bit of knowledge, companies can easily protect their APIs from
                 attacks.
+
+    Difference between an API and a remote server: Do not be confused, an API is not a
+        database or a server. The main difference between a remote server (Google’s server) and
+        an API (example Google Maps API) is the format of the request and response involved.
+    o Remote server (revision): It is computer that is remotely located with a web
+        server software and database software installed in it to handle remote requests
+        sent by the users of a browser/website.
+            ● To render a picture request (from google.com), your browser expects a
+                response in HTML format
+            ● When you make a request from google.com, it is your browser that is the client
+    o API: It is the part of the server that works as a middleman to communicate
+        directly with the server of another application.
+            ● When you make a request/call to Google Maps API, it would just return
+                the data with JSON or XML format.
+            ● When you (your website’s server) make a request/call to Google Maps
+                API’s server, it is your website’s server that is the client.
