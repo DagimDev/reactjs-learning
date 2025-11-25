@@ -46,3 +46,9 @@ Web API: Web API as the name suggests, is an API over the web/internet which
     Most HTTP APIs we write are not RESTful. This framework implements HTTP
     protocol specification and hence you hear terms like URIs, request/response
     headers, caching, versioning, various content types(formats)
+
+REST: REST stands for REpresentational State Transfer. REST is architectural
+    style, or it is the rules and constraints one must follow when building APIs (or
+    when writing code to request data from a server). In short, it is the rule one must
+    follow when writing the code (API) to request data from server of an
+    application/website.
