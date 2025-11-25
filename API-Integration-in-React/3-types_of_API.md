@@ -39,3 +39,10 @@ Client: The client is the person or software who uses the API. For example, you,
 Resource: By resource we mean any data (object) provided by an API. For
     example, Google's map API provides resources like city names, zip codes or
     other information.
+
+Web API: Web API as the name suggests, is an API over the web/internet which
+    can be accessed using HTTP protocol. A Web API can be developed using
+    various technologies like Java and ASP.NET. These APIs can be RESTful or not.
+    Most HTTP APIs we write are not RESTful. This framework implements HTTP
+    protocol specification and hence you hear terms like URIs, request/response
+    headers, caching, versioning, various content types(formats)
