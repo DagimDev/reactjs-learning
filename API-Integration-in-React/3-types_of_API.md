@@ -28,3 +28,10 @@ definitions and protocols used to integrate data from one application into anoth
 REST/RESTful API vs Web API vs SOAP API: APIs are tools we use to transfer data
     from one app to another and this transfer requires clear protocols and architectures. API
     protocols/architectures are the rules that govern an API's operation.
+
+Client: The client is the person or software who uses the API. For example, you,
+    as a developer, you can call Facebook’s API to read and write data from
+    Facebook by reading/creating a new post. The client can also be a software, like,
+    the web browser. When you browse Facebook’s website, your browser is the
+    client who calls Facebook’s API and uses the returned data to render information
+    on the browser.
