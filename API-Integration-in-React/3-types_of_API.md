@@ -52,3 +52,25 @@ REST: REST stands for REpresentational State Transfer. REST is architectural
     when writing code to request data from a server). In short, it is the rule one must
     follow when writing the code (API) to request data from server of an
     application/website.
+    
+REST/RESTful API: A REST API is an API that is backed by the architectural
+    style of REST. In A RESTful website/application, it is the representation of the
+    state of the resource that is transferred to the requesting client mainly via HTTP.
+    The representation of the resources can be delivered via HTTP in one of these
+    formats: JSON (JavaScript Object Notation), HTML, XLT, Python, PHP, or plain
+    text. JSON is the most generally popular file format to use because, despite its
+    name, it is as readable by both humans and machines. Therefore, REST API is
+    basically like using a website from your browser. In both website browsing and
+    REST API calling, you make a call from a client/browser to a server of another
+    application, and you will get data back as a response with HTTP protocol.
+    However, in API call, instead of clicking buttons or filling out forms from the
+    browser, you write code to explicitly request data from a server. In addition,
+    unlike requesting a website from your browser, when you make an API
+    request/call, you will receive the file in JSON/XML format, not in HTML format.
+    Example: Let us request for GitHub’s home page by typing the
+    https://github.com/ URL into our browser. Here, you will get the response in
+    HTML format. Now, let us request for GitHub’s API by typing the
+    https://api.github.com/ URL into the browser. Guess what, we just made an API
+    request in our browser to GItHub’s API. Notice here, the response is a JSON
+    format that has resources like the URLs for the current GitHub user, URL for
+    their followers, etc.
