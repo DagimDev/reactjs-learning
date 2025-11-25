@@ -74,3 +74,23 @@ REST/RESTful API: A REST API is an API that is backed by the architectural
     request in our browser to GItHub’s API. Notice here, the response is a JSON
     format that has resources like the URLs for the current GitHub user, URL for
     their followers, etc.
+
+Criteria to make an API a RESTful API
+    ● Requests must be managed through HTTP: The client-server
+        architecture has to be made up of clients, servers, and resources, with
+        requests managed through HTTP
+    ● Stateless client-server communication: We said that API is basically
+        how one application (Ex. website) transfers data to another application.
+        For an API to be RESTful, the communication between the
+        communicating applications has to be stateless. Meaning, neither the
+        requesting application nor the state/data providing application store data
+        about each other whenever there is an API call from one to another.
+    ● Data must be transferred in a standard form:
+    o Resources requested must be identifiable and separate from the
+        representations sent to the client
+    o Representation of the resources sent to the client must be
+        self-descriptive with enough information to describe how the
+        client should process it.
+    o The representation of resources sent to the client must be
+        manipulatable by the receiving client because the representation
+        contains enough information about the resource to do so.
