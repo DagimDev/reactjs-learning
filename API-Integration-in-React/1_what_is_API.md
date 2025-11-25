@@ -34,3 +34,45 @@ Introduction to API: what do we mean by API?
         company’s data to improve the company’s customer service, to assist in customer
         retention and to ultimately to drive the company’s sales growth. Examples of
         renowned CRM companies/software are Salesforces, Zoho CRM and Bitrix24
+
+    Problem APIs were created to solve: As companies increased their business online, they
+        started to require their sales and human resource employees to make “data-driven”
+        decisions. Because more and more of company data was being stored “in the cloud” by
+        Customer Relationship Management (CRM) systems like Salesforce, data that could
+        easily be used by any employee of a company became very hard to access from these
+        third-party CRM systems. We all know that sales and HR employees do not have a higher
+        level of software literacy to query their company’s data from these third-party CRM
+        platforms. Due to this, many companies were forced to pay for other web service like
+        Tableau to fetch their own data from their CRM in order to use the data to make “data
+        driven” decisions for their business. The fact that companies had to pay both for a CRM
+        platform (to store their data) and to pay for other companies (to fetch their data from
+        CRM platforms) made these companies to force their CRM platforms to simplify their
+        complex way of transferring data. CONCLUSION: Therefore, web APIs were created to
+        simplify the way organizations fetch their own data from their third-party CRM platforms
+        so that these organizations use their own data to make business related decisions.
+
+    How and why are APIs used by software developers? Assume you are building a
+        website that sells different products and you want to include Amazon’s products in your
+        website. One way to get the list of all of Amazon’s products is by contacting Amazon and
+        requesting for a spreadsheet of all their products. But this means that you must find a way
+        to import that spreadsheet into your application. Even if you find a way to import the
+        spreadsheet data, that data will become outdated very quickly, for instance, the price
+        might change, or the item might no longer be available. It will be better if Amazon
+        provides you with a way to query their application/website to get the data (with its
+        update) you want to use in your websites. Below, you will see why APIs are chosen way
+        of sharing data from one application to another:
+            ▪ Integration: API integration is a process of connecting two or more applications
+                through their APIs. Meaning, API integration is the way by which a developer
+                can include data from another application/website in their website. For instance,
+                connecting your www.apple.com application/website with YouTube application
+                to show Apple’s videos in your website.
+            ▪ Efficiency: Rather than developers spending excessive time coding their own
+                interface, companies can take advantage of the easy integration provided by
+                APIs. This allows development teams to focus their efforts on other priorities.
+            o Security: APIs supplement an extra layer of protection between your data and
+                server, for example by integrating a two-factor authentication or by creating a
+                password to log in. However, developers can add more security to APIs by using
+                transport layer security (TLS) encryption (that keeps the internet connection
+                private and checks if the data sent between two applications is encrypted). In
+                short, with a little bit of knowledge, companies can easily protect their APIs from
+                attacks.
