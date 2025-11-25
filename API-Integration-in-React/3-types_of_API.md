@@ -35,3 +35,7 @@ Client: The client is the person or software who uses the API. For example, you,
     the web browser. When you browse Facebook’s website, your browser is the
     client who calls Facebook’s API and uses the returned data to render information
     on the browser.
+
+Resource: By resource we mean any data (object) provided by an API. For
+    example, Google's map API provides resources like city names, zip codes or
+    other information.
