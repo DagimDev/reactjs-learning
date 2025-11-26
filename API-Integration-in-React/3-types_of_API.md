@@ -126,4 +126,8 @@ CRUD commands correlate to the HTTP methods in REST API: Many
             Read                          GET                               SELECT
             Update                        PUT/PATCH                         UPDATE
             Delete                        DELETE                            DELETE
-        
+SOAP (Simple Object Access Protocol): SOAP is an established Web API protocol for
+    exchanging structured information. It uses XML to Authenticate, Authorize, and
+    Communicate processes running on operating systems. Since web protocols like HTTP run
+    on most operating systems, SOAP allows clients to invoke web services and receive
+    responses irrespective of language and platform.
