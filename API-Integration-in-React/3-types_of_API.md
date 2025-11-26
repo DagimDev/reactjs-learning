@@ -131,3 +131,15 @@ SOAP (Simple Object Access Protocol): SOAP is an established Web API protocol fo
     Communicate processes running on operating systems. Since web protocols like HTTP run
     on most operating systems, SOAP allows clients to invoke web services and receive
     responses irrespective of language and platform.
+
+    Building/developing an API: This is basically the process exposing your data to allow
+        others (or even you) access your data in many different places/ways or if you want to
+        allow customers or partners limited or complete access to your data. APIs do not have to
+        be publicly available at all. In fact, most companies that have an API only use them
+        internally to allow different parts of their website to talk to each other. You probably do
+        not need to build an API if you just need a landing page (such as a portfolio website) or
+        you’re your app will not grow much or you have no plan to expand your website to a
+        mobile or desktop app. You will need to secure (require user to issue API key), have an
+        authentication system (to check whom you want to give access to) prepare documentation
+        (as instruction for developers on how to use your API) when building an API. Blocks
+        needed to build an a API:
