@@ -103,3 +103,8 @@ CRUD and HTTP in REST APIs: Both REST and CRUD describe manipulating data
             record in the database), POST (creates a new record in the database), PUT
             (changes a record's information in the database) and DELETE (removes a record
             from the database).
+        CRUD: CRUD is an acronym for the four fundamental database commands a
+            user can perform on a set of data. These are CREATE (to create a new record in
+            the database), READ (to read information from a record in the database),
+            UPDATE (to change a record's information in the database) and DELETE (to
+            remove a record from the database).
