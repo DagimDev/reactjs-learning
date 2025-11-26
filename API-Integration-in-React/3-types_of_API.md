@@ -108,3 +108,22 @@ CRUD and HTTP in REST APIs: Both REST and CRUD describe manipulating data
             the database), READ (to read information from a record in the database),
             UPDATE (to change a record's information in the database) and DELETE (to
             remove a record from the database).
+
+CRUD commands correlate to the HTTP methods in REST API: Many
+    programming languages (like SQL) and protocols (like HTTP) have their own
+    equivalent of CRUD, often with slight variations in what they do. For example,
+    CRUD commands (Create, Read, Update, and Delete) map/correlate to the HTTP
+    protocol’s POST, GET, PUT, and DELETE methods respectively. CRUD
+    commands (CREATE, READ, UPDATE and DELETE) also correlate to the
+    INSERT, SELECT, UPDATE and DELETE commands of SQL respectively.
+    Note: REST APIs REST APIs are not limited to CRUD functions as long as they
+    use the appropriate HTTP method. Example: REST API can still allow clients to
+    reboot a server, a command that does not equate to any of the four CRUD
+    commands. Look at the below table for more explanation:
+        CRUD                            Corresponding                   Corresponding
+        operation/command               HTTP Methods                    SQL commands
+            Create                        PUT/POST                          INSERT
+            Read                          GET                               SELECT
+            Update                        PUT/PATCH                         UPDATE
+            Delete                        DELETE                            DELETE
+        
