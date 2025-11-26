@@ -94,3 +94,7 @@ Criteria to make an API a RESTful API
     o The representation of resources sent to the client must be
         manipulatable by the receiving client because the representation
         contains enough information about the resource to do so.
+    
+CRUD and HTTP in REST APIs: Both REST and CRUD describe manipulating data
+    on a database. CRUD commands often play a role in REST APIs, where they map (not
+    perfectly) to the HTTP methods GET, POST, DELETE, PUT, and PATCH.
