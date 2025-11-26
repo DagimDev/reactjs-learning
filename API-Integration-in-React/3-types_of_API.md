@@ -143,3 +143,8 @@ SOAP (Simple Object Access Protocol): SOAP is an established Web API protocol fo
         authentication system (to check whom you want to give access to) prepare documentation
         (as instruction for developers on how to use your API) when building an API. Blocks
         needed to build an a API:
+    An API needs a format for making requests: When a user wants to use an API,
+        they make a “request”. This request usually includes request methods like GET, a
+        URL path to the server the requested data is stored at and a payload (example a
+        form or JSON data). Good APIs offer rules for making these requests in their
+        documentation.
