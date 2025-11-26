@@ -98,3 +98,8 @@ Criteria to make an API a RESTful API
 CRUD and HTTP in REST APIs: Both REST and CRUD describe manipulating data
     on a database. CRUD commands often play a role in REST APIs, where they map (not
     perfectly) to the HTTP methods GET, POST, DELETE, PUT, and PATCH.
+        Most REST APIs use HTTP protocol to transfer data: RESTful API calls
+            involve HTTP methods like GET (reads the representation of the resource from a
+            record in the database), POST (creates a new record in the database), PUT
+            (changes a record's information in the database) and DELETE (removes a record
+            from the database).
