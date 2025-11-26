@@ -148,3 +148,7 @@ SOAP (Simple Object Access Protocol): SOAP is an established Web API protocol fo
         URL path to the server the requested data is stored at and a payload (example a
         form or JSON data). Good APIs offer rules for making these requests in their
         documentation.
+API needs to return a response: Once the API processes the request and
+    gets/saves data to the database, it should return a “response” which usually
+    includes a status code like 404/Not Found, 200/Okay, or 500/Server Error and a
+    payload (usually text or JSON data)
