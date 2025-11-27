@@ -31,3 +31,8 @@ General steps to make an API Call:
     app making the request. API key also tracks the number of requests made for
     usage and billing purposes.
 □ Wait for the response
+
+Different ways of making API call in JavaScript: JavaScript provides some built-in
+    browser objects and some external open-source libraries to interact with the APIs. There
+    are 5 ways of making an API call in JavaScript: XMLHttpRequest, jQuery,fetch and
+    axios. 
