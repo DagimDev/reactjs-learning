@@ -17,3 +17,10 @@ applications?
 ▪ JSON is very similar with how JavaScript structures objects: Because of this
     similarity, a JavaScript program can easily convert JSON data into native
     JavaScript objects.
+
+REST APIs accept JSON for request and send responses to JSON: JSON is the
+    standard for transferring data and REST APIs accept requests for JSON data and send a
+    response in JSON format. Note: JavaScript has built-in methods to encode and decode
+    JSON either through the Fetch API or another HTTP client. There are methods that we
+    can use to make sure our REST API app responds with JSON (example, by setting
+    Content-Type in the response header to “application/json”).
