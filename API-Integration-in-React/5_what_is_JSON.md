@@ -24,3 +24,25 @@ REST APIs accept JSON for request and send responses to JSON: JSON is the
     JSON either through the Fetch API or another HTTP client. There are methods that we
     can use to make sure our REST API app responds with JSON (example, by setting
     Content-Type in the response header to “application/json”).
+    
+What does a JSON document look like? A valid JSON document can contain two
+structures:
+1.An Object surrounded by curly braces and containing multiple name/value pairs.
+Example:
+```jsx
+{
+    "students": {
+        "firstName": "Abebe",
+        "lastName":"Bekele"
+    }
+}
+2. An Array or ordered list of values surrounded by square brackets.
+Example:
+{"students":
+    [
+        {"firstName":"Abebe", "lastName":"Bekele"},
+        {"firstName":"Almaz","lastName":"Debbie"},
+        {"firstName":"Challa", "lastName":"Kebede"}
+    ]
+}
+```
