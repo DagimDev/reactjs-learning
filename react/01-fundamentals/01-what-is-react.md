@@ -78,3 +78,60 @@ If the data changes:
 - name = "Alex"
 
 React updates the UI automatically.
+
+## 3. React is Component-Based
+
+The biggest concept in React:
+
+|   Everything is a component.
+
+A component is a reusable piece of UI.
+
+For example, a website:
+
+* Website
+* │
+* ├── Navbar
+* │
+* ├── Sidebar
+* │
+* ├── Profile
+* │
+* ├── Post
+* │
+* └── Footer
+
+Each part can be a component.
+
+Example:
+```jsx
+function Navbar() {
+  return (
+    <nav>
+      My Website
+    </nav>
+  );
+}
+```
+
+Another component:
+```jsx
+function Footer() {
+  return (
+    <footer>
+      Copyright 2026
+    </footer>
+  );
+}
+```
+Then combine them:
+```jsx
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
+}
+```
