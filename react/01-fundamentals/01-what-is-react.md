@@ -277,3 +277,58 @@ But you cannot put statements:
 </h1>
 ```
 Because `if` is a statement, not an expression.
+
+### React Components
+
+Now let's go deeper.
+
+- A component is just a JavaScript function that returns JSX.
+
+Example:
+```jsx
+function Welcome() {
+  return <h1>Welcome to React</h1>;
+}
+```
+To use it:
+```jsx
+function App() {
+  return (
+    <div>
+      <Welcome />
+    </div>
+  );
+}
+```
+Notice:
+```jsx
+<Welcome />
+```
+This is how we "call" a React component.
+
+Components Can Be Reusable
+
+Imagine a user card:
+```jsx
+function UserCard() {
+  return (
+    <div>
+      <h2>Dagi</h2>
+      <p>Developer</p>
+    </div>
+  );
+}
+```
+If you need 100 users, you don't want to copy this 100 times.
+
+This is where Props come in.
+
+Props allow us to send data into components.
+
+Example:
+```jsx
+<UserCard name="Dagi" job="Developer" />
+
+<UserCard name="Alex" job="Designer" />
+```
+The component receives different data.
