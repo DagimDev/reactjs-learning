@@ -135,3 +135,32 @@ function App() {
   );
 }
 ```
+
+## 4. JSX
+
+- JSX looks like HTML, but it is actually JavaScript syntax.
+
+Example:
+
+```jsx 
+const element = <h1>Hello World</h1>; 
+```
+
+The browser does not understand JSX directly.
+
+React converts it into *JavaScript*.
+
+This:
+
+```html 
+<h1>Hello World</h1>
+```
+
+becomes something like:
+```jsx
+React.createElement(
+  "h1",
+  null,
+  "Hello World"
+);
+```
