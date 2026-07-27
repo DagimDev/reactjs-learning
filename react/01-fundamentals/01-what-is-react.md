@@ -223,8 +223,11 @@ Because class is a JavaScript keyword:
 
 ❌
 
+```html 
 <div class="box">
+```
 
 ✅
-
+```html
 <div className="box">
+```
