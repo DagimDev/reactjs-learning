@@ -1,5 +1,7 @@
-React Js Lesson 2: Props (Passing Data to Components)
-
+# React Js Lesson 2: Props (Passing Data to Components)
+> **Module:** 01 - Fundamentals  
+> **Topic:** Props   
+> **Status:** 🟢 Completed  
 ```jsx
 function Student() {
 

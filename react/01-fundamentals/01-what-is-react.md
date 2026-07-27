@@ -1,5 +1,9 @@
 # React.js — Lesson 1
 
+> **Module:** 01 - Fundamentals  
+> **Topic:** What is react  
+> **Status:** 🟢 Completed  
+
 ## 1. The Problem Before React
 
 Before React, developers often manipulated the `DOM` directly.
