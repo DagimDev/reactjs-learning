@@ -231,3 +231,49 @@ Because class is a JavaScript keyword:
 ```html
 <div className="box">
 ```
+
+### Why do we use {} in JSX?
+
+JSX is a mix of:
+
+HTML-like syntax
+JavaScript expressions
+
+Normal HTML:
+```html
+<h1>Hello name</h1>
+```
+React sees "name" as plain text.
+
+But:
+```jsx
+<h1>Hello {name}</h1>
+```
+tells React:
+* "Go into JavaScript mode and use the value stored in the variable `name`."
+
+### Important: Expressions vs Statements
+
+Inside JSX {} you can put expressions:
+
+✅ Good:
+```jsx
+<h1>{name}</h1>
+
+<p>{5 + 5}</p>
+
+<p>{isLoggedIn ? "Welcome" : "Login"}</p>
+```
+But you cannot put statements:
+
+❌ Wrong:
+```jsx
+<h1>
+{
+  if (age > 18) {
+    return "Adult";
+  }
+}
+</h1>
+```
+Because `if` is a statement, not an expression.
