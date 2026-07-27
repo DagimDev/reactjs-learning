@@ -164,3 +164,67 @@ React.createElement(
   "Hello World"
 );
 ```
+
+## 5. Rules of JSX
+### Rule 1: Return one parent element
+
+❌ Wrong:
+```jsx
+function App() {
+  return (
+    <h1>Hello</h1>
+    <p>Welcome</p>
+  );
+}
+```
+✅ Correct:
+```jsx
+function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <p>Welcome</p>
+    </div>
+  );
+}
+```
+Or use a Fragment:
+```jsx
+function App() {
+  return (
+    <>
+      <h1>Hello</h1>
+      <p>Welcome</p>
+    </>
+  );
+}
+```
+
+### Rule 2: JavaScript goes inside {}
+```jsx
+function App() {
+
+  const age = 25;
+
+  return (
+    <h1>
+      I am {age} years old
+    </h1>
+  );
+}
+```
+Output:
+
+**I am 25 years old**
+
+### Rule 3: Use className
+
+Because class is a JavaScript keyword:
+
+❌
+
+<div class="box">
+
+✅
+
+<div className="box">
